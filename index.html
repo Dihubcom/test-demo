@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://dist.3d.io/3dio-js/1.1.x/3dio.min.js"></script>
+    <!-- <script src="/script.js" defer></script> -->
+  </head>
+  <body>
+      <!-- <h1>Hello Yaga</h1> -->
+    <a-scene>
+      <a-entity 
+        geometry="primitive: box" 
+        material="color:red"
+        position="0 1.6 -2"
+      ></a-entity>
+      <a-entity 
+        geometry="segmentsRadial:36;segmentsTubular:32;primitive:torusKnot" 
+        material="metalness:1;color:#419fbe;wireframe:true" 
+        position="1.915 0.795 -0.877"
+      ></a-entity>
+      <a-sky 
+        src="./assets/original.jpg"
+      ></a-sky>
+      <!-- you can also add a 360 image to the sky element -->
+        <!-- <a-entity 
+            io3d-data3d="url:https://storage.3d.io/535e624259ee6b0200000484/171002-1837-069qe5/archilogic_2017-10-02_18-36-42_jZBOac.gz.data3d.buffer;lightMapIntensity:3;lightMapExposure:0.541" position="-1.265 0 -2.601"></a-entity> -->
+    </a-scene>
+  </body>
+</html>
